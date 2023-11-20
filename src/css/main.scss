@@ -124,6 +124,8 @@ body{
       transition: 0.2s;
       &:hover {
          color: #888;
+         font-size: 16px;
+         padding: 16px 20px 17px 20px;
       }
    }
 }
@@ -172,6 +174,7 @@ body{
       text-decoration: none;
       color: $color1;
       font-size: 20px;
+      transition: 0.2s;
    &:hover{
       color: #888;
    }
@@ -233,6 +236,7 @@ body{
       line-height: 18px;
       text-decoration: none;
       color: $color1;
+      transition: 0.2s;
 }
 .card__link a:hover{
    color: #888;
@@ -340,16 +344,20 @@ body{
 input {
    width: 540px;
    height: 60px;
-   margin-bottom: 24px;
+   margin-bottom: 26px;
    padding: 0 30px;
    border-radius: 6px;
    border: solid 1px #333;
+}
+.form__link {
+   padding-top: 20px;
+ 
 }
 .form__button {
    color: $color3;
    border: none;
    background-color: $color1;
-   padding: 15px 30px;
+   padding: 17px 40px;
    text-transform: uppercase;
    border-radius: 6px;
    font-size: 14px;
@@ -360,6 +368,7 @@ input {
 }
 .form__button:hover {
    color:#333;
+   transition: 0.2s;
 }
 /*Footer*/
 .footer {
@@ -522,6 +531,9 @@ input {
    input {
     max-width: 300px;
    } 
+   .write__wrapper {
+      
+   }
 }
 @media  screen and (max-width: 475px) {
    .header__contain h1 {
