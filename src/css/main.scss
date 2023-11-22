@@ -21,14 +21,8 @@ body{
    color: $color-text;
    position: relative;
 }
-.vert-menu {
-   display: none;
-   position: absolute;
-   top: 0;
-   left: 0;
-   background-color: #fff;
-   width: 300px;
-   height: 800px;
+body ._lock {
+   overflow: hidden;
 }
 /*Header*/
 .header {
@@ -41,7 +35,20 @@ body{
    padding: 0 15px;
 }
 .header__nav {
-   padding-top: 50px;
+   max-width: 1440px;
+   position: fixed;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%); 
+   width: 100%;
+   z-index: 5;
+   padding-left: 165px;
+   padding-right: 165px;
+   height: 80px;
+   background: url('../img/Bg.png') top no-repeat;
+   padding-bottom: 10px;
+
+   //padding-top: 10px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -58,6 +65,7 @@ body{
    justify-content: end;
    margin-right: 15px;
 }
+
 .nav__menu__item a{
    color: $color3;
    text-transform: uppercase;
@@ -112,6 +120,7 @@ body{
 .header__contain__btn {
    text-align: center;
    padding-top: 71px;
+  
    a {
       font-size: 14px;
       line-height: 16px;
@@ -125,7 +134,7 @@ body{
       &:hover {
          color: #888;
          font-size: 16px;
-         padding: 16px 20px 17px 20px;
+         padding: 16px 21px 17px 21px;
       }
    }
 }
@@ -147,6 +156,9 @@ body{
    font-size: 36px;
    line-height: 42px;
    font-weight: 600;
+}
+.vert-menu {
+   display: none;
 }
 /*section-Video*/
 .video__wrapper {
@@ -397,8 +409,14 @@ input {
 }
 
 /*Media*/
-@media  screen and (max-width: 1250px) {
+
+@media  screen and (max-width: 1140px) {
+   .header__nav {   
+      padding-left: 15px;
+      padding-right: 15px;
+   }
 }
+
 @media  screen and (max-width: 1050px) {
    .video__wrapper {
       flex-direction: column;
@@ -448,54 +466,67 @@ input {
    .form__link {
       text-align: center;
    }
-
-   
 }
 @media  screen and (max-width: 870px) {
    .tech__items {
       flex-wrap: wrap;
    }
 }
-@media  screen and (max-width: 770px) {
+@media  screen and (max-width: 790px) {
    .header__nav{
-      justify-content: space-evenly;
-      .nav__button {
-         margin-top: 20px;
-      }
+      justify-content: space-between;
    }
-   .nav__menu {
-      margin-top: 0px;
+   .nav__menu, .nav__button {
+      display: none;
+    } 
+   .burger {
+      display: block;
    }
+   .burger ._active {
+      display: none;
+   }
+   .burger__a:hover {
+      color: #888;
+   }
+   .nav__logo-vm {
+      background-color: $color1;
+   }
+   
+   .vert-menu{
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 75%;
+      height: 100%;
+      background-color: rgba($color: #fafafa, $alpha: .9);
+      //transition: left 0.3s ease 0s;
+      padding: 50px 30px 30px 30px;
+      overflow: auto;
+      z-index: 6;
+
+      .nav-item  {
+         margin: 0 0 26px 0;
+               
+         a {
+            text-decoration: none;
+            font-size: 20px;
+            color: $color-text;
+         }
+      }   
+   }
+   
+   
+   .vert-menu._active {
+      left: 0;
+   } 
 } 
 @media  screen and (max-width: 690px) {
-   .nav__menu {
-      margin-top: 20px;
-   }
-   .nav__menu__item a{
-      font-size: 16px;
-   }
-   .nav__button a {
-      font-size: 16px;
-   }
    .video__wrapper {
       padding: 60px 0;
    }
 }
 @media  screen and (max-width: 576px) {
-   .nav__menu{
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 20px;
-   }
-   .header__nav{
-      justify-content: space-between;
-   }
-   .burger {
-      display: block;
-   }
-   .burger__a:hover {
-      color: #888;
-   }
    .header {
       height: 650px;
    }
@@ -510,9 +541,6 @@ input {
        line-height: 28px;
       }
     }
-    .nav__menu, .nav__button {
-      display: none;
-    } 
     .video__wrapper {
       padding-top: 40px;
     }
@@ -531,10 +559,7 @@ input {
    input {
     max-width: 300px;
    } 
-   .write__wrapper {
-      
-   }
-}
+ }
 @media  screen and (max-width: 475px) {
    .header__contain h1 {
       font-size: 32px;
@@ -558,8 +583,11 @@ input {
       font-size: 30px;
    }
 }
-@media  screen and (max-width: 320px) {
+@media  screen and (max-width: 330px) {
    .oportun__item__card {
       top: 200px;
    }
+   input {
+      max-width: 250px;
+   } 
 }

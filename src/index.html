@@ -15,36 +15,38 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <!-- vertical menu -->
-    <ul class="nav flex-column vert-menu">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#!">Обзор</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Особенности</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Технология</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Войти</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Закрыть</a>
-        </li>
-      </ul>
+    <div class="contain">
+        <ul class="vert-menu">
+            <li class="nav-item">
+            <a class="nav-link" href="#!">Обзор</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Особенности</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Технология</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Войти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Закрыть</a>
+            </li>
+        </ul>
+    </div>
+    
     <header class="header">
-        <div class="contain">
+        <div class="contain ">
             <div class="header__nav">
                 <div class="nav__logo"><img src="../dist/img/logotype.png" alt="logotype"></div>
                 <ul class="nav__menu">
-                    <li class="nav__menu__item"><a href="#!">обзор</a></li>
-                    <li class="nav__menu__item"><a href="#!">особенности</a></li>
-                    <li class="nav__menu__item"><a href="#!">технология</a></li>
-                    <li class="nav__menu__item"><a href="#!">контакты</a></li>
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".video" href="#!">обзор</a></li>
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".oportun" href="#!">особенности</a></li>
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".tech" href="#!">технология</a></li>
+                    <li class="nav__menu__item"><a class="menu__link" data-goto=".write" href="#!">контакты</a></li>
                     <li class="nav__menu__item"><a href="#!">войти</a></li>
                 </ul>
                 <div class="nav__button"><a href="#!" class="button-nav">ВХОД</a></div>
@@ -208,6 +210,6 @@
         </div>
     </footer>    
    
-    <script src="../dist/js/main.min.js"></script>
+    <script src="../dist/js/main.min.js" defer></script>
 </body>
 </html>
