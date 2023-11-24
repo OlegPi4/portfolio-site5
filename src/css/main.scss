@@ -21,7 +21,7 @@ body{
    color: $color-text;
    position: relative;
 }
-body ._lock {
+body._lock {
    overflow: hidden;
 }
 /*Header*/
@@ -482,7 +482,7 @@ input {
    .burger {
       display: block;
    }
-   .burger ._active {
+   .burger._active {
       display: none;
    }
    .burger__a:hover {
