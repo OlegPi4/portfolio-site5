@@ -67,17 +67,16 @@ if(menuLinks.length > 0) {
 }
 /*---------Меню-бургер----------*/
 
-// const burgerMenu = document.querySelector('.burger')
-// if(burgerMenu) {
-//    const vertMenu = document.querySelector('.vert-menu')
-//    burgerMenu.addEventListener("click", function(e) {
-//       document.body.classList.toggle('_lock')
-//       burgerMenu.classList.toggle('_active')
-//       vertMenu.classList.toggle('_active')
-//    })
-   
-// }
-let burg = document.querySelector('.burger')
-burg.onclick = function() {
-   burg.classList.toggle('_active')
+const burgerMenu = document.querySelector('.burger')
+if(burgerMenu) {
+   const vertMenu = document.querySelector('.vert-menu')
+   burgerMenu.addEventListener("click", function(e) {
+      document.body.classList.toggle('_lock')
+      burgerMenu.classList.toggle('_active')
+      vertMenu.classList.toggle('_active')
+   })
 }
+// let burg = document.querySelector('.burger')
+// burg.onclick = function() {
+//    burg.classList.toggle('_active')
+// }
