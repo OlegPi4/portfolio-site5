@@ -65,12 +65,14 @@ body._lock {
    justify-content: end;
    margin-right: 15px;
 }
-
+.nav__menu__item {
+   margin-right: 15px;
+}
 .nav__menu__item a{
    color: $color3;
    text-transform: uppercase;
    text-decoration: none;
-   font-size: 14px;
+   font-size: 16px;
    line-height: 16px;
    font-weight: 500;
    transition: 0.2s;
@@ -88,7 +90,7 @@ body._lock {
       padding: 11px 30px;
       border: 1px solid $color3;
       border-radius: 4px;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 16px;
       transition: 0.2s;
       &:hover {
@@ -495,6 +497,12 @@ input {
    .tech__items {
       flex-wrap: wrap;
    }
+   .nav__menu {
+      margin-right: 5px;
+   }
+   .nav__menu__item a{
+      font-size: 14px; 
+   }   
 }
 @media  screen and (max-width: 790px) {
    .header__nav{
