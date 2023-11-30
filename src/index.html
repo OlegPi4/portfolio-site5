@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&     family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,22 +19,28 @@
     <div class="contain">
         <ul class="vert-menu">
             <li class="nav-item">
-            <a class="nav-link" href="#!">Обзор</a>
+                <i class="material-icons">tag_faces</i>
+                <a class="nav-link" href="#!" data-goto=".video"> Обзор</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Особенности</a>
+                <i class="material-icons">star_border</i>
+                <a class="nav-link" href="#!" data-goto=".oportun">Особенности</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Технологии</a>
+                <i class="material-icons">transform</i>
+                <a class="nav-link" href="#!" data-goto=".tech">Технологии</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
+                <i class="material-icons">supervisor_account</i>
+                <a class="nav-link" href="#!" data-goto=".write">Контакты</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Войти</a>
+                <i class="material-icons">verified_user</i>
+                <a class="nav-link" href="#!"> Войти</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Закрыть</a>
+                <i class="material-icons">close</i>
+                <a class="nav-link-close" href="#">Закрыть</a>
             </li>
         </ul>
     </div>
@@ -51,7 +58,7 @@
                 </ul>
                 <div class="nav__button"><a href="#!" class="button-nav">ВХОД</a></div>
                 <div class="burger">
-                    <a href="" class="burger__a">
+                    <a href="#!" class="burger__a">
                         <div class="burger__line"></div>
                         <div class="burger__line"></div>
                         <div class="burger__line"></div>
@@ -64,24 +71,62 @@
                     Всего 69,95 € в месяц после 7-дневной 
                     пробной версии за 4,99 €</p>
                 <div class="header__contain__btn">
-                    <a href="#!">ПОПРОБОВАТЬ</a>    
+                    <a class="modal-trigger" href="#modal1"  data-hystmodal="#myModaL">ПОПРОБОВАТЬ</a>    
                 </div>
                 
             </div>
         </div>
+   
     </header>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+            Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!</p>
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
     <section class="video">
         <div class="contain">
             <div class="video__wrapper">
                 <div class="video__contain">
                     <h2 class="h2-title">Простое приложение для управления бюджетом</h2>
                     <p>Наше приложение создано, чтобы вы могли в реальном времени управлять своим бюджетом и расходами в режиме онлайн с любого устройства. Оно предоставляет подробные отчеты о доходах и расходах с графиками, чтобы вы сразу могли увидеть расходы и бюджет. Читайте ниже, чтобы узнать больше.</p>
-                    <div class="video__contain__link"><a href="#!">Узнать подробнее</a></div>
+                    <div class="video__contain__link"><a class="modal-trigger" href="#modal2">Узнать подробнее</a></div>
                 </div>
                 <div class="video__img"><img src="../dist/img/Video.png" alt=""></div>
             </div>
         </div>
     </section>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+            <p>
+                Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!
+            </p>
+            <p>
+            Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!</p>
+            <div class="modal2-img">
+                <img src="/dist/img/testim1.png" alt="our-specialist">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
     <section class="oportun">
         <div class="contain">
             <h2 class="h2-title oportun-title">Возможности</h2>
@@ -92,7 +137,7 @@
                         <h3 class="card__title">Поддерживает все валюты и карты</h3>
                         <p class="card__text">Мы поддерживаем все популярные валюты и полностью настраиваем, чтобы добавить</p>
                         <div class="card__link">
-                            <a href="#!" >Подробнее</a>    
+                            <a class="modal-trigger" href="#modal-o1" >Подробнее</a>    
                         </div>
                     </div>
                 </div>
@@ -102,7 +147,7 @@
                         <h3 class="card__title">Управляйте своими расходами на ходу</h3>
                         <p class="card__text">Вы можете получить доступ к своей учетной записи из любой точки мира на любом устройстве</p>
                         <div class="card__link">
-                            <a href="#!" >Подробнее</a>    
+                            <a  class="modal-trigger" href="#modal-o2"  >Подробнее</a>    
                         </div>
                     </div>
                 </div>
@@ -112,7 +157,7 @@
                         <h3 class="card__title">Управление бюджетом осуществляется в облаке</h3>
                         <p class="card__text">Наше приложение создано для того, чтобы вы могли управлять своим бюджетом. </p>
                         <div class="card__link">
-                            <a href="#!" >Подробнее</a>    
+                            <a class="modal-trigger" href="#modal-o3"  >Подробнее</a>    
                         </div>
                     </div>
                 </div>
@@ -120,6 +165,44 @@
 
         </div>
     </section>
+    <div id="modal-o1" class="modal">
+        <div class="modal-content">
+            <h4>Поддержка валют и карт</h4>
+            <p>Подддержка валют</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+    <div id="modal-o2" class="modal">
+        <div class="modal-content">
+            <h4>Управляй расходами</h4>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+    <div id="modal-o3" class="modal">
+        <div class="modal-content">
+            <h4>Управляй бюджетом</h4>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+
     <section class="tech">
         <div class="contain">
             <h2 class="h2-title tech-title">Технологии</h2>
@@ -209,7 +292,7 @@
 
         </div>
     </footer>    
-   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script async src="../dist/js/main.min.js"></script>
 </body>
 </html>
