@@ -36,15 +36,30 @@
             </li>
             <li class="nav-item">
                 <i class="material-icons">verified_user</i>
-                <a class="nav-link" href="#!"> Войти</a>
+                <a class="nav-link modal-trigger" href="#modal-enter"> Войти</a>
             </li>
             <li class="nav-item">
                 <i class="material-icons">close</i>
-                <a class="nav-link-close" href="#">Закрыть</a>
+                <a class="nav-link-close " >Закрыть</a>
             </li>
         </ul>
     </div>
     
+    <div id="modal-enter" class="modal enter "> 
+        <div class="modal-content  form-enter">
+            <form class="form-1" id="form-1" >
+                <div class="close-form">
+                    <a href="#" class="modal-close"><i class="material-icons">close</i></a>
+                </div>
+                <label class="label-form">Введите имя пользователя</label>
+                <input  class="input-form" type="text" placeholder="name user">
+                <label class="field-form">Введите пароль</label>
+                <input  class="input-form" type="password" placeholder="password">
+                <button class="btn-enter" type="submit"><a href="#!">Подтвердить</a></button>
+            </form>
+        </div>
+       
+    </div>    
     <header class="header">
         <div class="contain ">
             <div class="header__nav">
@@ -54,9 +69,9 @@
                     <li  class="nav__menu__item"><a class="menu__link" data-goto=".oportun" href="#!">особенности</a></li>
                     <li  class="nav__menu__item"><a class="menu__link" data-goto=".tech" href="#!">технологии</a></li>
                     <li class="nav__menu__item"><a class="menu__link" data-goto=".write" href="#!">контакты</a></li>
-                    <li class="nav__menu__item"><a href="#!">войти</a></li>
+                    
                 </ul>
-                <div class="nav__button"><a href="#!" class="button-nav">ВХОД</a></div>
+                <div class="nav__button "><a href="#modal-enter" class="button-nav modal-trigger">ВХОД</a></div>
                 <div class="burger">
                     <a href="#!" class="burger__a">
                         <div class="burger__line"></div>
@@ -76,7 +91,7 @@
                 
             </div>
         </div>
-   
+      
     </header>
     <div id="modal1" class="modal ">
         <div class="modal-content">
@@ -267,7 +282,7 @@
                     <p class="write__text">Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</p>
                 </div>
                 <div class="write__form">
-                    <form action="" class="form">
+                    <form action="" class="form" id="form-2">
                         <input type="text" id="name" placeholder="Name" class="form__name">
                         <input type="tel" id="phone" placeholder="Phone" class="form__phone">
                         <div class="form__link">

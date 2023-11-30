@@ -689,6 +689,63 @@ input {
    margin: 0 auto;
 }
 
+/* форма ввода */
+
+.enter {
+   background: #ddd;
+   border-radius: 10px;
+   color: #333;
+   font-size: 20px;
+   text-align: center;
+   border: 2px solid #888;
+}
+
+.form-1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.close-form {
+   width: 95%;
+   display: flex;
+   justify-content: end;
+   a{
+      color: #333;
+   }
+}
+.form-1 label, .form-1 input {
+   display: block;
+   margin: 10px 0;
+}
+.label-form {
+   margin-top: 20px;
+}
+.input-form {
+   margin: 0 auto;
+   border: 2px solid #888;
+   font-size: 18px;
+   letter-spacing: 0.1em;
+
+}
+input::placeholder {
+   font-size: 16px;
+}
+.btn-enter{
+   cursor: pointer;
+   background: #aaa;
+   border-radius: 5px;
+   margin-top: 30px;
+   padding: 15px 20px;
+   max-width: 180px;
+   a{
+      color:  #333; 
+      text-decoration: none;
+   }
+}
+.btn-enter:hover {
+   background: #888;
+}   
+
 
  @media only screen and (max-width: 992px) {
    .modal {
@@ -810,4 +867,13 @@ input {
          -ms-flex-direction: row;
              flex-direction: row;
    }
+ }
+
+ .input-form  {
+   max-width: 80%;
+ }
+ @media  screen and (max-width: 690px) {
+   .input-form  {
+      max-width: 95%;
+    } 
  }
