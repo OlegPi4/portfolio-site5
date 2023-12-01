@@ -154,6 +154,15 @@ body._lock {
 }
 .nav-link {
    font-size: 40px;
+   i {
+      vertical-align: sub;
+   }
+}
+.nav-link-close {
+   cursor: pointer;
+   i {
+      vertical-align: sub;
+   }
 }
 .material-icons {
    font-size: 24px;
