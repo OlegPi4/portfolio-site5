@@ -1,4 +1,9 @@
 "use strict"
+/*Модальное окно Materialize*/
+document.addEventListener('DOMContentLoaded', function() {
+   let modal = document.querySelectorAll('.modal');
+   let instancesModal = M.Modal.init(modal);
+ });
 
 /*------Прокрутка при клике по горизонтальному меню------*/
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
@@ -26,22 +31,35 @@ function onMenuLinkClick(e) {
 const burgerMenu = document.querySelector('.burger')
 const vertMenu = document.querySelector('.vert-menu')
 if(burgerMenu) {
-   //const vertMenu = document.querySelector('.vert-menu')
    burgerMenu.addEventListener("click", function() {
-      document.body.classList.toggle('_lock');
-      burgerMenu.classList.toggle('_active'); 
-      vertMenu.classList.toggle('_active');
+      toggleVert();
    })
 }
-/*закрытие вертикального меню*/
+/*закрытие вертикального меню по х */
 const vertClose = document.querySelector('.nav-link-close')
 if(vertClose) {
-   //const vertMenu = document.querySelector('.vert-menu')
    vertClose.addEventListener("click", function() {
-      document.body.classList.toggle('_lock');
-      burgerMenu.classList.toggle('_active');
-      vertMenu.classList.toggle('_active');
+      toggleVert();
    })
+}
+/*закрытие вертикального меню по клику вне меню */
+document.addEventListener('click', (e) => {
+   // проверка является ли елемент дочерним по отношению к указаному
+   const withinVM = e.composedPath().includes(vertMenu);
+   const withinBM = e.composedPath().includes(burgerMenu);
+   // если кли не на элемент вертикального меню или бургер и верт. меню имеет класс _active 
+ 	if ( ! withinVM && 
+      (document.querySelector('.vert-menu._active') !== null)&&
+      ! withinBM ) {
+      toggleVert();
+   }
+})
+
+
+function toggleVert() {
+   document.body.classList.toggle('_lock');
+   burgerMenu.classList.toggle('_active');
+   vertMenu.classList.toggle('_active');
 }
 
 /*------Прокрутка при клике по вертикальному меню------*/
@@ -57,8 +75,3 @@ if ( navLinks.length > 0 ) {
       })
    });
 }
-/*Модальное окно Materialize*/
-document.addEventListener('DOMContentLoaded', function() {
-   let modal = document.querySelectorAll('.modal');
-   let instancesModal = M.Modal.init(modal);
- });

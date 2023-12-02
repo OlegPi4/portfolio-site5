@@ -524,7 +524,7 @@ input {
       display: block;
    }
    .burger._active {
-      display: none;
+      pointer-events: none ;
    }
    .burger__a:hover {
       color: #888;
@@ -540,7 +540,7 @@ input {
       left: -100%;
       width: 75%;
       height: 100%;
-      background-color: rgba($color: #fafafa, $alpha: .9);
+      background-color: rgba($color: #fafafa, $alpha: .97);
       //transition: left 0.3s ease 0s;
       padding: 50px 30px 30px 30px;
       overflow: auto;
