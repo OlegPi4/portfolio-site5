@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&     family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>CloudBudget</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="../dist/img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="contain">
+        <ul class="vert-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#!" data-goto=".video"><i class="material-icons" data-goto=".video">tag_faces</i> Огляд</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!" data-goto=".oportun"> <i class="material-icons" data-goto=".oportun">star_border</i>Особливості</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!" data-goto=".tech"> <i class="material-icons" data-goto=".tech">transform</i>Технологіі</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!" data-goto=".write"> <i class="material-icons" data-goto=".write">supervisor_account</i> Контакти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link modal-trigger" href="#modal-enter"> <i class="material-icons">verified_user</i> Увійти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link-close " > <i class="material-icons">close</i>Закрити</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="modal-enter" class="modal enter "> 
+        <div class="modal-content  form-enter">
+            <form class="form-1" id="form-1" >
+                <div class="close-form">
+                    <a href="#" class="modal-close"><i class="material-icons">close</i></a>
+                </div>
+                <label class="label-form">Введіть ім'я користувача</label>
+                <input  class="input-form" type="text" placeholder="name user">
+                <label class="field-form">Введіть пароль</label>
+                <input  class="input-form" type="password" placeholder="password">
+                <button class="btn-enter" type="submit"><a href="#!">Підтвердити</a></button>
+            </form>
+        </div>
+       
+    </div>    
+    <header class="header">
+        <div class="contain ">
+            <div class="header__nav">
+                <div class="nav__logo"><img src="../dist/img/logotype.png" alt="logotype"></div>
+                <ul class="nav__menu">
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".video" href="#!">огляд</a></li>
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".oportun" href="#!">особливості</a></li>
+                    <li  class="nav__menu__item"><a class="menu__link" data-goto=".tech" href="#!">технологіі</a></li>
+                    <li class="nav__menu__item"><a class="menu__link" data-goto=".write" href="#!">контакти</a></li>
+                    
+                </ul>
+                <div class="nav__button "><a href="#modal-enter" class="button-nav modal-trigger">ВХІД</a></div>
+                <div class="burger">
+                    <a  class="burger__a">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="header__contain">
+                <h1>CloudBudget</h1>
+                <p>Управління бюджетом для всіх. 
+                    Всього 69,95 € в місяць після 7-денної 
+                    пробної версіі за 4,99 €</p>
+                <div class="header__contain__btn">
+                    <a class="modal-trigger" href="#modal1"  >СПРОБУВАТИ</a>    
+                </div>
+                
+            </div>
+        </div>
+      
+    </header>
+    <div id="modal1" class="modal ">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+            Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!</p>
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <section class="video">
+        <div class="contain">
+            <div class="video__wrapper">
+                <div class="video__contain">
+                    <h2 class="h2-title">Простий додаток для управління бюджетом</h2>
+                    <p>Наш додаток створений, чоб ви могли в реальному часі управляти своїм бюджетом і витратами в режимі онлайн с любого пристрою. Він надає докладні звіти про доходи і витрати з графіками, щоб ви зразу могли побачити витрати і бюджет. Читайте нижче, щоб дізнатися більше.</p>
+                    <div class="video__contain__link"><a class="modal-trigger" href="#modal2">Дізнатись докладніше</a></div>
+                </div>
+                <div class="video__img"><img src="../dist/img/Video.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <div id="modal2" class="modal ">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+            <p>
+                Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!
+            </p>
+            <p>
+            Ratione vitae tempore aperiam dolorem nobis fugit voluptatum sunt a. Voluptates, minima odit. Sequi, necessitatibus, perferendis error deserunt ipsa cupiditate non, nemo fugit exercitationem quasi iure. Deserunt a commodi tenetur?
+            Aperiam in odit, atque hic possimus ipsa recusandae suscipit est dolor temporibus porro nisi iure assumenda dolorum nam vel tempore, iusto laborum quae quas! Magni culpa voluptate ex eum porro!</p>
+            <div class="modal2-img">
+                <img src="../dist/img/testim1.png" alt="our-specialist">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+    <section class="oportun">
+        <div class="contain">
+            <h2 class="h2-title oportun-title">Можливості</h2>
+            <div class="oportun__items">
+                <div class="oportun__item">
+                    <div class="oportun__item__img"><img src="../dist/img/oport-1.png" alt="supp-all-curenc"></div>
+                    <div class="oportun__item__card">
+                        <h3 class="card__title">Піддтримка всіх валют та карток</h3>
+                        <p class="card__text">Мы підтримуємо всі популярні валюти і повністю налаштовуємо, щоб додати</p>
+                        <div class="card__link">
+                            <a class="modal-trigger" href="#modal-o1" >Додатково</a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="oportun__item">
+                    <div class="oportun__item__img"><img src="../dist/img/oport2.png" alt="maneg-expens"></div>
+                    <div class="oportun__item__card">
+                        <h3 class="card__title">Управляйте своїми витратими на ходу</h3>
+                        <p class="card__text">Вы можете отримати доступ до свого облікового запису з любого місця світу на любому пристрої</p>
+                        <div class="card__link">
+                            <a  class="modal-trigger" href="#modal-o2"  >Додатково</a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="oportun__item">
+                    <div class="oportun__item__img"><img src="../dist/img/oport-3.png" alt="maneg-budget"></div>
+                    <div class="oportun__item__card">
+                        <h3 class="card__title">Управління бюджетом выдбувається в хмарі</h3>
+                        <p class="card__text">Наш додаток створено для того, щоб ви могли управляти своїм бюджетом. </p>
+                        <div class="card__link">
+                            <a class="modal-trigger" href="#modal-o3"  >Додатково</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="modal-o1" class="modal ">
+        <div class="modal-content">
+            <h4>Підтримка валют та карт</h4>
+            <p>Підтримка валют</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+    <div id="modal-o2" class="modal ">
+        <div class="modal-content">
+            <h4>Управляй витратами</h4>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+    <div id="modal-o3" class="modal ">
+        <div class="modal-content">
+            <h4>Управляй бюджетом</h4>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aut perspiciatis voluptate ipsum reiciendis, sapiente sit, enim maxime placeat ratione culpa ducimus eaque iste, fugiat quia? Perferendis nihil voluptatem ipsam!
+            Temporibus dolorem quae eaque animi exercitationem ullam repudiandae, illo, velit dignissimos possimus asperiores officiis repellat nobis, vitae quibusdam ducimus consequatur saepe? Temporibus officia ea distinctio necessitatibus culpa ad suscipit explicabo.
+        </div>
+        <div class="divider"></div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+
+    <section class="tech">
+        <div class="contain">
+            <h2 class="h2-title tech-title">Технологіі</h2>
+            <div class="tech__items">
+                <div class="tech__item">
+                    <div class="tech__item__lable">
+                        <div class="lable__number">01</div>
+                        <div class="lable__icon"><img src="../dist/img/tech-icon1.png" alt="icon-cloud"></div>
+                    </div>
+                    <h3 class="card__title">Хмарне зберігання</h3>
+                    <p class="card__text">Доступ з любого місця світу з любого пристрою</p>
+                </div>
+                <div class="tech__item">
+                    <div class="tech__item__lable">
+                        <div class="lable__number">02</div>
+                        <div class="lable__icon"><img src="../dist/img/tech-icon2.png" alt="icon-shield"></div>
+                    </div>
+                    <h3 class="card__title">Безпека</h3>
+                    <p class="card__text">Вся  інформація зберігається на захищених хмарних серверах</p>
+                </div>
+                <div class="tech__item">
+                    <div class="tech__item__lable">
+                        <div class="lable__number">03</div>
+                        <div class="lable__icon"><img src="../dist/img/tech-icon3.png" alt="icon-report"></div>
+                    </div>
+                    <h3 class="card__title">PDF Звіти</h3>
+                    <p class="card__text">Завантажуйте ваші звіти в зручному форматі PDF</p>
+                </div>
+                <div class="tech__item">
+                    <div class="tech__item__lable">
+                        <div class="lable__number">04</div>
+                        <div class="lable__icon"><img class="last-img" src="../dist/img/tech-icon4.png" alt="icon-report"></div>
+                    </div>
+                    <h3 class="card__title">CSV звіти</h3>
+                    <p class="card__text">Завантажуйте ваші звіти в зручному форматі CSV</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pink">
+        <div class="contain">
+            <div class="pink__wrapper">
+                <div class="pink__content">
+                    <h2 class="h2-title pink-title">Зосередьтесь на економіі коштів</h2>
+                    <p class="pink__text">Ми допомогаємо вам відслідковувати ваші звички в витратах, щоб ви могли легко визначити і скоротити непотрібні витрати. Просто приєднайтесь сьогодні, щоб почати!</p>
+                    <div class="pink__content__icons">
+                        <div class="play-store"><a href="#!"><img src="../dist/img/playstor.png" alt="icon-playstore"></a></div>
+                        <div class="app-store"><a href="#!"><img src="../dist/img/app-store.png" alt="icon-playstore"></a></div>
+                    </div>
+                </div>
+                <div class="pink__foto">
+                    <img src="../dist/img/pink-img.png" alt="rest">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="write">
+        <div class="contain">
+            <div class="write__wrapper">
+                <div class="write__content">
+                    <h2 class="h2-title write__title">Напишіть нам</h2>
+                    <p class="write__text">Залишились питання або побоювання? Просто заповніть форму нижче, і наша служба підтримки зв'яжеться з вами на протязі 24 годин.</p>
+                </div>
+                <div class="write__form">
+                    <form action="" class="form" id="form-2">
+                        <input type="text" id="name" placeholder="Name" class="form__name">
+                        <input type="tel" id="phone" placeholder="Phone" class="form__phone">
+                        <div class="form__link">
+                            <a href="#!" class="form__button"  type="submit">Надіслати</a>    
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="contain">
+            <div class="footer__contain">
+                <div class="footer__title">Адреса</div>
+                <p class="footer__text">Pipang Ltd, Griva Digeni, <br>
+                    81-83 Jacovides Tower, 1st Floor<br>
+                    1090 Picosia USA</p>
+                <p class="footer__copyright">Copyright 2021 CloudBudget               </p>    
+            </div>
+
+        </div>
+    </footer>    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script async src="../dist/js/main.min.js"></script>
+</body>
+</html>
