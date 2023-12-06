@@ -548,11 +548,24 @@ input {
 
       .nav-item  {
          margin: 0 0 26px 0;
-               
+         
+         
+         
          a {
+            color: $color1;
+            text-transform: uppercase;
             text-decoration: none;
-            font-size: 20px;
-            color: $color-text;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 500;
+            transition: 0.2s;
+            &:hover {
+               color: #a4a4a4;
+            }
+
+         //    text-decoration: none;
+         //    font-size: 20px;
+         //    color: $color-text;
          }
       }   
    }
@@ -639,7 +652,7 @@ input {
 .divider {
    height: 1px;
    overflow: hidden;
-   background-color: #e0e0e0;
+   background-color: $color1;
  }
  
  .dropdown-content li.divider {
@@ -709,12 +722,12 @@ input {
 /* форма ввода */
 
 .enter {
-   background: #ddd;
+   background: #eee;
    border-radius: 10px;
    color: #333;
    font-size: 20px;
    text-align: center;
-   border: 2px solid #888;
+   border: 2px solid $color1;
 }
 
 .form-1 {
@@ -726,41 +739,52 @@ input {
    width: 95%;
    display: flex;
    justify-content: end;
-   a{
-      color: #333;
-   }
 }
 .form-1 label, .form-1 input {
    display: block;
    margin: 10px 0;
+   color: $color1;
 }
 .label-form {
    margin-top: 20px;
 }
 .input-form {
    margin: 0 auto;
-   border: 2px solid #888;
+   border: none;
+   outline: none;
    font-size: 18px;
+   color: $color-text;
    letter-spacing: 0.1em;
 
 }
+input[type="text"]:focus {
+   border: solid 1px $color1;
+   color: $color-text;
+} 
+input[type="password"]:focus {
+   border: solid 1px $color1;
+   color: $color-text;
+} 
+
 input::placeholder {
    font-size: 16px;
+   color: rgb(247, 126, 132);
 }
+ 
 .btn-enter{
    cursor: pointer;
-   background: #aaa;
+   background: #ccc;
    border-radius: 5px;
    margin-top: 30px;
    padding: 15px 20px;
    max-width: 180px;
    a{
-      color:  #333; 
+      color:  $color1; 
       text-decoration: none;
    }
 }
 .btn-enter:hover {
-   background: #888;
+   background: #aaa;
 }   
 
 
@@ -780,11 +804,14 @@ input::placeholder {
  
  .modal .modal-close {
    cursor: pointer;
+   color: $color1;
  }
  
  .modal .modal-footer {
    border-radius: 0 0 2px 2px;
-   background-color: #fafafa;
+   //background-color: #fafafa;
+   background-color: $color1;
+   //color: $color3;
    padding: 4px 6px;
    height: 56px;
    width: 100%;
